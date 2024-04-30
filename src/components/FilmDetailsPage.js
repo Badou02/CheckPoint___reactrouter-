@@ -17,7 +17,7 @@ const FilmDetailsPage = () => {
       <p>Note: {film.note}</p>
       <a href={film.trailerLink}>Bande-annonce</a>
       <br />
-      <Link to="/">Retour à l'accueil</Link>
+     <nav> <Link to="/App.js">Retour à l'accueil</Link> </nav>
     </div>
   );
 }

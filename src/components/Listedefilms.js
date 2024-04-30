@@ -1,10 +1,11 @@
+import allfilms from '../allfilms.json'
 import React from 'react';
 import FilmCard from './FilmCard';
 
 const ListeDeFilms = ({ films }) => {
   return (
     <div className="film-list">
-      {films.map((film, index) => (
+      {allfilms.map((film, index) => (
         <FilmCard
           key={index}
           title={film.title} 

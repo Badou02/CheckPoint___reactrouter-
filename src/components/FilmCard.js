@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 const FilmCard = ({ title, note, description, image,trailerLink }) => {
   return (
    <div>
@@ -10,8 +9,8 @@ const FilmCard = ({ title, note, description, image,trailerLink }) => {
       <Card.Body>
         <Card.Title>{title }</Card.Title>
         <Card.Text>{description}</Card.Text>
-        <Card.Text>Note: {note }</Card.Text>
-        <Link to={`/details/${title}`} className="btn btn-primary">Voir Détails</Link>
+        <Card.Text>Note:{note}</Card.Text>
+        <Card.Text>{trailerLink}</Card.Text>
       </Card.Body>
     </Card>
    </div> 

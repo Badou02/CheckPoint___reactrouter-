@@ -1,5 +1,5 @@
 .App{
-  background: #ede908;
+  background: #79932c;
 }
 
 body {
@@ -35,7 +35,7 @@ code {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 200px;
-background-color: rgb(88, 95, 6);
+background-color: rgb(121, 146, 30);
 }
 
 /* Styles for individual film cards */

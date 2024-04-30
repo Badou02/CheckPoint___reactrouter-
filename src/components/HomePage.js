@@ -1,7 +1,8 @@
 import React from 'react';
+ import allfilms from '../allfilms.json';// Chemin relatif depuis les fichiers de composants
 import { Link } from 'react-router-dom';
  import FilmCard from './FilmCard';
- import allfilms from '../allfilms.json'; // Chemin relatif depuis les fichiers de composants
+ 
  const HomePage = () => {
    return (
      <div>
@@ -16,7 +17,7 @@ import { Link } from 'react-router-dom';
               image={film.image}
                trailerLink={film.trailerLink}
              />
-           </Link>
+           </Link >
         ))}
        </div>
      </div>

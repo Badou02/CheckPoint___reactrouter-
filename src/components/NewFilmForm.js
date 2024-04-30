@@ -1,6 +1,6 @@
  import React, { useState } from 'react';
-
-  function App() {
+ 
+  function Newform() {
     const [films, setFilms] = useState([
       { title: 'Film 1', note: 8, image: 'image1.jpg' },
       { title: 'Film 2', note: 7, image: 'image2.jpg' },
@@ -25,7 +25,7 @@
     };
  
     return (
-      <div>
+      <div  >
         <h1>Liste de Films</h1>
         <form className="form-container"  onSubmit={handleSubmit}>
           <label >
@@ -56,9 +56,12 @@
             />
           </label>
           <button  type="submit" className="form-button">Ajouter un Film</button>
-        </form>
+       </form>
        
-        { <ul >
+        <div className='divv'>  
+       <h2>Nouvelle films Ajouter</h2>
+          <ul>
+             
           {films.map((film, index) => (
             <li key={index}>
               <img src={film.image} alt={film.title} />
@@ -67,12 +70,14 @@
                 <p>Note: {film.note}</p>
               </div>
             </li>
+           
           ))}
-        </ul> }
+        </ul> 
+        </div>
        </div>
-     
+       
     );
   }
  
-  export default App;
+  export default Newform;
  
