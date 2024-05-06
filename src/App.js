@@ -19,6 +19,7 @@ function App()  {
      <Route path="/" element={< HomePage />} />{/* "" si on est sur la branche principale on affiche la page HomePage */}
      <Route path="/NewFilmForm" element={<NewFilmForm/>} /> {/*  Cette ligne  veux dire que si on est sur la page NewFilmForm on affiche les elements de NewFilmForm */ }
     <Route path="/Listedefilms" element={<Listedefilms/>} /> {/*  Cette ligne  veux dire que si on est sur la page Listedefilms on affiche les elements de Listedefilms */ }
+ 
   </Routes>
  
  </>
@@ -26,13 +27,3 @@ function App()  {
      ); 
     }
 export default App;
-
-
- 
-  
-
-
-
-
-
-
